@@ -2,17 +2,17 @@
  
 - Berkas gaya yang akan dibuat: tokens.css, base.css,
   layout.css, komponen.css, tema.css
-- Warna utama: #8d04bb (Ungu), dipilih karena Warna yang lucu
+- Warna utama: #C73DF5 (Ungu), dipilih karena Warna yang lucu
  
 ### Token yang saya tetapkan
  
 | Token | Nilai | Untuk apa |
 |---|---|---|
-| --color-primary | #8d04bb | tombol, tautan, penanda |
+| --color-primary | #C73DF5 | tombol, tautan, penanda |
 | --color-fg | #0F172A | warna teks utama |
 | --color-bg | #fafafa | latar halaman |
 | --color-surface | #fad6fa | Latar kartu dan panel, sedikit berbeda dari halaman |
-| --color-border | #0F172A | Garis pemisah dan tepi kotak |
+| --color-border | #D44EB9 | Garis pemisah dan tepi kotak |
 | --color-danger | #ff002b | Peringatan dan isian yang tidak sah |
 | --color-focus | #ff00bf | Garis fokus papan ketik |
 
@@ -35,5 +35,4 @@
 
 Menulis sendiri semuanya mengikuti yang ada dalam worksheet, hanya saya bertanya ke AI untuk memastikan dan jika ada yang tidak saya pahami di petunjutk, atau mencari tutorial pemeriksaan inspect.
 
-Kriteria selesai saya: mengubah --color-primary di satu baris
-harus mengubah warna tombol, tautan, judul, dan garis fokus.
+Kriteria selesai saya: Warna antara tema berbeda, belum diperbaiki.

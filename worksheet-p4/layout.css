@@ -1,6 +1,6 @@
 header {
   padding-block: var(--space-4);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
  
 .header-baris {                /* <div class="header-baris"> di dalam header */
@@ -19,7 +19,7 @@ nav ul {
 }
  
 nav a {
-  color: var(--color-primary);
+  color: var(--primary);
   text-decoration: none;
 }
  
@@ -40,8 +40,8 @@ main {
  
 .kartu {
   flex: 1 1 16rem;              /* tumbuh, menyusut, lebar dasar 16rem */
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-1);
   padding: var(--card-pad);
@@ -50,7 +50,7 @@ main {
 footer {
   margin-top: var(--space-6);
   padding-block: var(--space-4);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-fg);       /* hindari abu pucat yang gagal kontras */
+  border-top: 1px solid var(--border);
+  color: var(--fg);       /* hindari abu pucat yang gagal kontras */
   font-size: var(--text-sm);
 }

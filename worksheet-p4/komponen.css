@@ -12,10 +12,10 @@ label {
 input, select, textarea {
   font: inherit;                /* kolom isian ikut ukuran huruf halaman */
   padding: var(--space-2) var(--space-3);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--color-surface);
-  color: var(--color-fg);
+  background: var(--surface);
+  color: var(--fg);
 }
  
 button {
@@ -23,22 +23,22 @@ button {
   padding: var(--space-2) var(--space-4);
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  background: var(--color-primary);
-  color: var(--color-surface);
+  background: var(--primary);
+  color: var(--primary-fg);
   cursor: pointer;
 }
 /* :focus-visible hanya muncul saat pengguna memakai papan ketik */
 :focus-visible {
-  outline: 2px solid var(--color-focus);
+  outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
  
 /* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
 input:user-invalid {
-  border-color: var(--color-danger);
+  border-color: var(--danger);
   border-width: 2px;
 }
  
 /* Pesan galat: sembunyikan selama belum tidak-sah, tampilkan saat perlu */
-.pesan-galat       { display: none; color: var(--color-danger); font-size: var(--text-sm); }
+.pesan-galat       { display: none; color: var(--danger); font-size: var(--text-sm); }
 .form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
