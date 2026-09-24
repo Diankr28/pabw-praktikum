@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+  KERANGKA AWAL — Halaman Profil Saya
+  PABW 2026/2027 · Pertemuan 3
+
+  Cara pakai:
+  1. Salin berkas ini, ganti nama menjadi profil.html
+  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
+  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
+  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
+
+  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
+  komentar itu adalah daftar periksa Anda sendiri.
+-->
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>List Film Favorit</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+
+</head>
+  <body>
+
+  <header>
+    <input type="checkbox" id="tema" class="pengalih-tema">
+    <label for="tema" class="tombol-tema">Tema gelap</label>
+
+    <div class="header-baris">
+    
+    <h1>List Film Favorit</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#bagian-3">Beranda</a></li>
+        <li><a href="#bagian-1">Biodata Film</a></li>
+        <li><a href="#bagian-2">Review Film</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+ 
+  <main>
+  <section id="bagian-3">
+      <h2>Beranda</h2>
+    <figure>
+  <img src="gambar-satu.webp"
+       alt="Gambar film Moonlight Mystique"
+       width="640" height="360" loading="lazy">
+  <figcaption>Moonlight Mystique (Hanzi: 白月梵星; Pinyin: Bái Yuè Fàn Xīng) adalah seri televisi Tiongkok tahun 2025 yang diadaptasi dari novel Bái Shuò Shàng Shén (白烁上神) karya Xing Ling. Seri televisi ini dibintangi oleh Bai Lu, Ao Ruipeng, Dai Luwa, dan Chang Huasen sebagai pemeran utama. Seri ini ditayangkan perdana di iQIYI pada 7 Januari 2025.</figcaption>
+  <img src="gambar-kedua.webp"
+       alt="Gambar film Narnia"
+       width="640" height="360" loading="lazy">
+  <figcaption>Sang Singa, Sang Penyihir dan Lemari (bahasa Inggris: The Lion, the Witch and the Wardrobe) adalah novel fantasi karya C. S. Lewis. Buku ini ditulis pada tahun 1950 dan mempunyai nuansa sekitar tahun 1940. Buku ini adalah yang pertama kali ditulis dari ketujuh seri "The Chronicles of Narnia". Meskipun buku ini adalah yang pertama kali ditulis, tetapi secara kronologi buku ini adalah buku yang kedua setelah "Keponakan Penyihir".</figcaption>
+</figure>
+</section>
+
+    <section id="bagian-1">
+      <h2>Biodata Film</h2>
+      <!-- tabel Anda nanti di sini (Lembar D) -->
+       <!-- TODO D.1: di dalam section pertama, buat tabel data Anda.
+         Wajib ada: <caption>, <thead>, <th scope="col">, dan minimal 3 baris data. -->
+<table>
+  <caption>Tabel. Biodata Film</caption>
+  <thead>
+    <tr>
+      <th scope="col">Tahun</th>
+      <th scope="col">Judul</th>
+      <th scope="col">Episode</th>
+      <th scope="col">Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2026</th>
+      <td>Hidden Love</td>
+      <td>24</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th scope="row">2025</th>
+      <td>Moonlight Mystique</td>
+      <td>40</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th scope="row">2024</th>
+      <td>Moana 2</td>
+      <td>1</td>
+      <td>98</td>
+    </tr>
+    <tr>
+    <th scope="row">2005</th>
+      <td>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</td>
+      <td>1</td>
+      <td>98</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+    <section id="bagian-2">
+      <h2>Review Film</h2>
+      <!-- form Anda nanti di sini (Lembar E) -->
+       <form action="/simpan" method="post">
+    <p>
+      <label for="nama-kolom1">Judul</label>
+      <input type="text" id="nama-kolom1" name="nama-kolom1" required>
+    </p>
+    <!-- tambahkan minimal dua kolom lagi -->
+     <p>
+      <label for="nama-kolom2">Tahun</label>
+      <input type="number" id="nama-kolom2" name="nama-kolom2" required>
+    </p>
+    <p>
+      <label for="nama-kolom3">Rating</label>
+      <input type="number" id="nama-kolom3" name="nama-kolom3" required>
+    </p>
+    <button type="submit">Simpan</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+    <p>Dian Krisna Rusmayanti · 25523140 · 2026</p>
+  </footer>
+</body>
+</html>
