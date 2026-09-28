@@ -1,4 +1,4 @@
-## Pertemuan 4 — Design token halaman profil
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
  
 - Berkas gaya yang akan dibuat: tokens.css, base.css,
   layout.css, komponen.css, tema.css
@@ -33,6 +33,6 @@
  
 ## Catatan penggunaan AI
 
-Menulis sendiri semuanya mengikuti yang ada dalam worksheet, hanya saya bertanya ke AI untuk memastikan dan jika ada yang tidak saya pahami di petunjuk, kemudian mencari step by setp pemeriksaan inspect.
+Menulis sendiri semuanya mengikuti yang ada dalam worksheet, hanya saya bertanya ke AI untuk memastikan dan jika ada yang tidak saya pahami di petunjuk, kemudian mencari step by step pemeriksaan inspect.
 
-Kriteria selesai saya: Semua fase sudah dikerjakan dengan maksimal dan sudah diperbaiki yang sebelumnya belum rampung di bagian pergantian tema.
+Kriteria selesai saya: Semua fase sudah dikerjakan dengan maksimal.
