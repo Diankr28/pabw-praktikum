@@ -1,12 +1,14 @@
-## Pertemuan 6 — Reponsif Mobile-First
-Menambahkan reponsif.css, Tambah dua titik henti: 48rem dan 60rem
-Batasi gambar, beri wadah bergulir pada tabel lebar.
+## Pertemuan 8 — JavaScript Modern ES6+, Struktur Data, dan Array Methods
 
 ## Catatan penggunaan AI
-Dikarenakan perbedaan penamaan class, sehingga membuat saya mencari solusi dengan penamaan class ganda dari worksheet sebelumnya dengan worksheet saat ini. Kemudian dikarenakan terdapat problem ketika pengujian 3 ukuran, dimana bagian tampilan tidak muncul sesuai rancangan worksheet, sehingga saya bertanya pada AI dimana problem utamanya, setelah mengotak - ngatik pada file html, responsif maupun layout, dimana terdapat pertentangan dari bagian .isi di layout dan .content di responsif, sehingga dari ai mendapatkan solusi penambahan -- grid-template-areas: none; -- .isi.content > .sisi,
-.isi.content > .utama {
-    grid-area: auto;
-}
-agar dapat mempertahankan kode dari worksheet - worksheet sebelumnya.
+- Apa perbedaan `const` dan `let`?
+- Bagaimana cara mengetahui tipe data menggunakan `typeof`?
+- Bagaimana cara memanggil fungsi melalui Console DevTools?
+- Mengapa fungsi pada JavaScript module tidak langsung tersedia di Console?
+- Bagaimana cara menggunakan `window` agar fungsi dapat diuji melalui Console?
+- Bagaimana cara menggunakan `map()` pada `daftarProyek`?
+- Mengapa `console.table(profil.table)` menghasilkan `undefined`?
+- Mengapa variabel yang dibuat dengan `const` di module tidak dapat diakses langsung dari Console?
+- Mengapa nilai dari input HTML perlu dikonversi menggunakan `Number()` sebelum dijumlahkan?
 
 Kriteria selesai saya: Semua fase sudah dikerjakan dengan maksimal.
