@@ -1,0 +1,29 @@
+.pengalih-tema { position: absolute; opacity: 0; pointer-events: none; } 
+
+/* Ikut pengaturan sistem: lapis semantik saja yang diganti */
+@media (prefers-color-scheme: dark) {
+  :root {
+  --bg:       var(--color-2);
+  --fg:       var(--color-1);
+  --primary-fg: var(--color-2);
+  --surface:  var(--color-3);
+  --border:   var(--color-4);
+  --primary:  var(--color-5);
+  --danger:   var(--color-6);
+  --focus:    var(--color-7);
+  --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
+  }
+}
+
+/* Pilihan manual HARUS berada setelah blok media query,
+   supaya menang saat keduanya menyala bersamaan. */
+:root:has(#tema:checked) {
+  --bg:       var(--color-2);
+  --fg:       var(--color-1);
+  --surface:  var(--color-4);
+  --border:   var(--color-3);
+  --primary:  var(--color-5);
+  --danger:   var(--color-6);
+  --focus:    var(--color-7);
+    --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
+}
