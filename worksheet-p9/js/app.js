@@ -1,5 +1,5 @@
 const name = "Dian";           // teks
-const jumlahProyek = 2;       // angka, bukan "3"
+const jumlahProyek = 3;       // angka, bukan "3"
 let pilihanAktif = "semua";   // akan berubah saat disaring
 
 console.log(typeof name);          // "string"
@@ -14,8 +14,9 @@ const profil = {
 window.profil = profil;
 
 const daftarProyek = [
-  { judul: "Halaman Profil", tahun: 2026, selesai: true },
-  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+  { judul: "Hidden Love", tahun: 2026, rating: 95, episode: 24 },
+  { judul: "Moonlight Mystique", tahun: 2025, rating: 98, episode: 40 },
+  { judul: "Moana 2", tahun: 2024, rating: 98, episode: 1}
 ];
 window.daftarProyek = daftarProyek;
 
@@ -49,7 +50,7 @@ const selesai = daftarProyek.filter((proyek) => proyek.selesai);
 console.table(selesai);
 
 window.selesai = selesai;
-
+``
 const katalog = daftarProyek.find((proyek) => proyek.judul === "Katalog Produk");
 console.log(katalog);
 
