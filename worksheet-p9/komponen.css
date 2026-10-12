@@ -62,3 +62,51 @@ input:user-invalid {
 
 .sorotan { grid-column: span 2; }
 .papan    { grid-row: span 2; }
+
+/* Container pembungkus filter */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+/* Tombol filter bawaan (menggunakan --surface dan --border dari Lapis 2) */
+.tombol-filter {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  transition: all 0.2s ease;
+}
+
+/* Efek saat kursor diarahkan ke tombol filter */
+.tombol-filter:hover {
+  background: var(--border);
+  color: var(--primary-fg);
+}
+
+/* Tombol filter aktif (menggunakan --primary dan --primary-fg) */
+.tombol-filter.aktif {
+  background: var(--primary);
+  color: var(--primary-fg);
+  border-color: var(--focus);
+  font-weight: 600;
+}
+
+/* Pesan saat galeri/kategori kosong */
+.pesan-kosong {
+  grid-column: 1 / -1; /* Memenuhi lebar baris grid galeri */
+  padding: var(--card-pad);
+  text-align: center;
+  color: var(--fg);
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-1);
+}
