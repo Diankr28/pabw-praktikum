@@ -81,7 +81,7 @@ input:user-invalid {
   color: var(--fg);
   cursor: pointer;
   box-shadow: var(--shadow-1);
-  transition: all 0.2s ease;
+
 }
 
 /* Efek saat kursor diarahkan ke tombol filter */

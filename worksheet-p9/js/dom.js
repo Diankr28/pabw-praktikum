@@ -14,7 +14,7 @@ function render(daftar) {
     pesan.className = "pesan-kosong";
     pesan.textContent = "Tidak ada film yang sesuai dengan kategori ini.";
     wadah.append(pesan);
-    return; // 
+    return; // Berhenti di sini, tidak perlu jalankan forEach
   }
   daftar.forEach((proyek) => wadah.append(buatKartu(proyek)));
 }
@@ -44,3 +44,47 @@ if (barisFilter) {
   });
 }
 
+const formReview = document.querySelector("#bagian-2 form");
+const inputJudul = document.querySelector("#nama-kolom1");
+
+if (inputJudul) {
+  inputJudul.addEventListener("input", () => {
+    if (inputJudul.value.trim() === "") {
+      inputJudul.setCustomValidity("Judul tidak boleh hanya berisi spasi.");
+    } else {
+      inputJudul.setCustomValidity("");
+    }
+  });
+}
+
+if (formReview) {
+  formReview.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const inputJudul = document.querySelector("#nama-kolom1");
+    const inputTahun = document.querySelector("#nama-kolom2");
+    const inputRating = document.querySelector("#nama-kolom3");
+
+    const judul = inputJudul.value.trim();
+    const tahun = Number(inputTahun.value);
+    const rating = Number(inputRating.value);
+
+    if (!judul || !tahun || !rating) {
+      return;
+    }
+
+    const filmBaru = {
+      judul: judul,
+      tahun: tahun,
+      rating: rating,
+      episode: 1
+    };
+
+    daftarProyek.push(filmBaru);
+
+    render(daftarProyek);
+
+
+    formReview.reset();
+  });
+}
