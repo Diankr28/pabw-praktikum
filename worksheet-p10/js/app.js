@@ -61,20 +61,21 @@ import { ambilProyek } from './api.js';
 // console.table(judulProyek);
 
 // window.judulProyek = judulProyek;
+import { render, pasangFilter, aturMemuat, tampilkanGalat } from './dom.js';
 
-
-async function muatData() {
+async function muat() {
+  aturMemuat(true); // 1. Tampilkan indikator memuat
   try {
-    const daftar = await ambilProyek();
-    window.daftar = daftar;
-
-    console.log('Data dari API:', daftar);
-    console.log('Judul film pertama:', daftar[0].judul); 
-
-    const teksJSON = JSON.stringify(daftar[0]);
-    console.log('Hasil stringify:', teksJSON);
+    const daftar = await ambilProyek(); // Ambil data dari api.js
+    pasangFilter(daftar);               // Pasang event listener filter
+    render(daftar);                     // Gambar kartu ke halaman
   } catch (galat) {
-    console.error('Galat ditangkap di app.js:', galat.message);
+    tampilkanGalat('Data gagal dimuat. Periksa koneksi, lalu muat ulang halaman.');
+    console.error(galat.message);
+  } finally {
+    aturMemuat(false); // Sembunyikan indikator memuat
   }
 }
-muatData();
+
+// Jalankan perakit saat halaman dimuat
+muat();

@@ -1,5 +1,29 @@
 [
-  { "id": 1, "judul": "Hidden Love", "tahun": 2026, "rating": 95, "episode": 24 },
-  { "id": 2, "judul": "Moonlight Mystique", "tahun": 2025, "rating": 98, "episode": 40 },
-  { "id": 3, "judul": "Moana 2", "tahun": 2024, "rating": 98, "episode": 1 }
+  {
+    "id": 1,
+    "judul": "Hidden Love",
+    "tahun": 2026,
+    "rating": 95,
+    "episode": 24,
+    "gambar": "image-kedua.png",
+    "sinopsis": "Hidden Love menceritakan kisah asmara manis antara Sang Zhi dan Duan Jiaxu yang berkembang seiring berjalannya waktu."
+  },
+  {
+    "id": 2,
+    "judul": "Moonlight Mystique",
+    "tahun": 2025,
+    "rating": 98,
+    "episode": 40,
+    "gambar": "gambar-satu.webp",
+    "sinopsis": "Moonlight Mystique (Hanzi: 白月梵星) menceritakan petualangan Bai Shuo dan Fanyu dalam dunia fantasi dan dewa-dewi."
+  },
+  {
+    "id": 3,
+    "judul": "Moana 2",
+    "tahun": 2024,
+    "rating": 98,
+    "episode": 1,
+    "gambar": "image.png",
+    "sinopsis": "Moana 2 adalah sekuel animasi Disney yang melanjutkan petualangan Moana bersama Maui mengarungi lautan samudra luas."
+  }
 ]
