@@ -5,14 +5,12 @@ const barisFilter = document.querySelector(".filter");
 const formReview = document.querySelector("#bagian-2 form");
 const inputJudul = document.querySelector("#nama-kolom1");
 
-// 1. Indikator Keadaan Memuat (Loading State)
 export function aturMemuat(aktif) {
   if (muatEl) {
     muatEl.hidden = !aktif;
   }
 }
 
-// 2. Indikator Keadaan Gagal (Error State)
 export function tampilkanGalat(pesan) {
   if (wadah) wadah.textContent = "";
   if (pesanKosong) {
@@ -21,12 +19,10 @@ export function tampilkanGalat(pesan) {
   }
 }
 
-// 3. Pembuat Elemen Kartu Lengkap (Gambar, Judul, Info, & Sinopsis)
 function buatKartu(proyek) {
   const figure = document.createElement("figure");
   figure.className = "kartu";
 
-  // Elemen Gambar
   const img = document.createElement("img");
   img.src = proyek.gambar || "image.png"; // Gambar default jika tidak ada di JSON
   img.alt = `Gambar film ${proyek.judul}`;
@@ -34,7 +30,6 @@ function buatKartu(proyek) {
   img.height = 360;
   img.loading = "lazy";
 
-  // Konten Kartu
   const figcaption = document.createElement("figcaption");
   figcaption.className = "kartu__isi";
 
@@ -57,7 +52,6 @@ function buatKartu(proyek) {
   return figure;
 }
 
-// 4. Penggambar Utama (Keadaan Berhasil / Kosong)
 export function render(daftar) {
   if (!wadah) return;
   wadah.textContent = ""; // Kosongkan wadah terlebih dahulu
@@ -78,14 +72,12 @@ export function render(daftar) {
   });
 }
 
-// 5. Fungsi Penanda Tombol Aktif Filter
 function tandaiTombolAktif(tombolAktif) {
   document.querySelectorAll(".filter button").forEach((tombol) => {
     tombol.classList.toggle("aktif", tombol === tombolAktif);
   });
 }
 
-// 6. Penyaring Kategori (Filter)
 export function pasangFilter(daftar) {
   if (!barisFilter) return;
 
@@ -103,7 +95,6 @@ export function pasangFilter(daftar) {
   });
 }
 
-// 7. Penanganan Form Review & Validasi Input
 if (inputJudul) {
   inputJudul.addEventListener("input", () => {
     if (inputJudul.value.trim() === "") {
