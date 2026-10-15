@@ -62,4 +62,25 @@ import { ambilProyek } from './api.js';
 
 // window.judulProyek = judulProyek;
 
-ambilProyek().then((daftar) => console.log(daftar));
+// Ambil elemen wadah kartu dan pesan kosong dari HTML
+const wadah = document.querySelector(".galeri.grid");
+const pesanKosong = document.querySelector(".pesan-kosong");
+
+async function muatData() {
+  try {
+    const daftar = await ambilProyek();
+    console.log('Data berhasil dimuat:', daftar);
+  } catch (galat) {
+    // 1. Catat di console
+    console.error('Galat ditangkap di app.js:', galat.message);
+
+    // 2. Tampilkan langsung ke halaman HTML (sesuai instruksi Lembar B)
+    if (wadah) wadah.textContent = "";
+    if (pesanKosong) {
+      pesanKosong.textContent = "Data gagal dimuat. Periksa koneksi atau alamat API.";
+      pesanKosong.hidden = false;
+    }
+  }
+}
+
+muatData();
