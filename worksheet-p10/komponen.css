@@ -110,3 +110,55 @@ input:user-invalid {
   font-size: var(--text-sm);
   box-shadow: var(--shadow-1);
 }
+
+/* Styling Tabel Biodata Film */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: var(--space-2);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface);
+  color: var(--fg);
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+  padding: var(--space-2);
+  color: var(--fg);
+  caption-side: top;
+  text-align: left;
+}
+
+thead th {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody th,
+tbody td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+/* Efek warna selang-seling (Zebra striping) */
+tbody tr:nth-child(even) {
+  background-color: var(--surface-alt);
+}
+
+/* Efek Hover baris */
+tbody tr:hover {
+  background-color: var(--surface-hover);
+}
