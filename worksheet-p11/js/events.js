@@ -1,4 +1,3 @@
-// js/events.js
 import { pilihKategori, tambahFavorit, aturUlang } from './state.js';
 
 export function pasangPendengar() {
@@ -8,7 +7,6 @@ export function pasangPendengar() {
   const formReview = document.querySelector("#bagian-2 form");
   const tombolAturUlang = document.querySelector("#atur-ulang");
 
-  // Event Listener Filter
   if (barisFilter) {
     barisFilter.addEventListener("click", (event) => {
       const tombol = event.target.closest("button");
@@ -18,7 +16,6 @@ export function pasangPendengar() {
     });
   }
 
-  // Event Listener Favorit
   if (wadah) {
     wadah.addEventListener("click", (event) => {
       const tombol = event.target.closest(".favorit");
@@ -27,14 +24,12 @@ export function pasangPendengar() {
     });
   }
 
-  // Event Listener Atur Ulang (Reset)
   if (tombolAturUlang) {
     tombolAturUlang.addEventListener("click", () => {
       aturUlang();
     });
   }
 
-  // Validasi Input Judul (dari kode awal kamu)
   if (inputJudul) {
     inputJudul.addEventListener("input", () => {
       if (inputJudul.value.trim() === "") {
@@ -45,7 +40,6 @@ export function pasangPendengar() {
     });
   }
 
-  // Form Submit Handler
   if (formReview) {
     formReview.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -58,7 +52,6 @@ export function pasangPendengar() {
 
       if (!judul || !tahun || !rating) return;
 
-      // Logikanya bisa disesuaikan bila ingin menambah film
     });
   }
 }

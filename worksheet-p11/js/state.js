@@ -31,7 +31,6 @@ export function tambahFavorit(id) {
   render(state);
 }
 
-// SIMPAN & MUAT (localStorage + JSON)
 export function simpan(state) {
   const isi = {
     versi: VERSI,

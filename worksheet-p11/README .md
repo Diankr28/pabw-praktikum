@@ -1,25 +1,30 @@
-## Pertemuan 10 — JavaScript Asinkron: fetch, Promise, dan JSON
-
+## Pertemuan 11 — Modul, State, dan Penyimpanan Klien
+node -v     v24.22.0
+npm -v      11.19.1
 ## Catatan penggunaan AI
-Yang Saya Kerjakan Sendiri:
-Desain & HTML/CSS:
-   - Bikin struktur halaman di `profil.html` (bagian biodata film, galeri grid, dan formulir review film).
-   - Bikin styling tema, layout grid, dan komponen kartu lewat file CSS (`tokens.css`, `layout.css`, `komponen.css`, dll).
-Data JSON (`data/proyek.json`):
-   - Menyusun daftar film favorit saya lengkap dengan `id`, `judul`, `tahun`, `rating`, `episode`, gambar, dan sinopsisnya.
-Eksperimen & Uji Coba Console:
-   - Menghubungkan variabel ke `window.daftar` buat ngetes struktur data dan akses properti di DevTools Console.
-   - Nyobain manipulasi form buat nambahin film baru ke tampilan.
-Pengisian Worksheet:
-   - Menjalankan tes 4 keadaan UI (Loading, Berhasil, Error, Empty) dan mencatat hasilnya di lembar kerja.
+-Dikerjakan oleh Saya (Pengguna)
 
-AI Membantu Saya
-Troubleshooting & Debugging Error:
-   - Jelasin pesan error WebSocket / Back-Forward Cache pas simulasi offline di browser.
-Refactoring Kode & Pemisahan Lapisan (SoC):
-   - AI bantu ngerapihin pembagian kode di `dom.js` supaya fungsi-fungsinya bisa di-export dengan rapi (`aturMemuat`, `tampilkanGalat`, `render`, `pasangFilter`, `pasangFormReview`).
-   - AI bantu bikin struktur perakit utama di `app.js` pakai `try/catch/finally` biar alur *loading*, *success*, dan *error* berjalan mulus.
-Penyusunan Kalimat Refleksi:
-   - Diskusi konsep tentang kenapa `fetch` ga melempar error di status 404 dan perbedaan `.json()` vs `JSON.stringify()`.
+Eksekusi Pengujian Browser:
+Menjalankan perintah manipulasi localStorage (setItem, getItem) melalui DevTools Console di browser.
+Melakukan pengujian error handling (mencoba JSON rusak "bukan-json" dan versi tidak cocok {}).
+Mengambil tangkapan layar (screenshot) hasil pengujian Console untuk dokumen laporan.
 
-Kriteria selesai saya: Semua fase sudah dikerjakan dengan maksimal.
+Instalasi Lingkungan (Environment):
+Mengunduh dan memasang berkas installer Node.js LTS (.msi).
+Mengonfigurasi terminal Git Bash / VS Code agar PATH terdeteksi dengan benar.
+Verifikasi & Pengisian Akhir:
+Memverifikasi setiap perintah node -v dan npm -v di terminal lokal.
+Menyalin dan mereview jawaban ke dalam format laporan/lembar kerja.
+
+Dikerjakan / Dibantu oleh AI
+
+Analisis & Solusi Soal Lembar Kerja:
+Memberikan analisis dan jawaban konseptual untuk pertanyaan evaluasi (ES6 Modules, localStorage, try...catch, dan Single Source of Truth).
+Menyusun tabel ringkasan konsep (F.1) dan pemetaan modul berkas JS (data.js, state.js, dom.js, events.js, app.js).
+
+Panduan Pengujian & Troubleshooting:
+Memberikan panduan step-by-step cara menguji daya tahan skrip terhadap data rusak di browser Console.
+Menyediakan instruksi mengatasi error bash: node: command not found dan navigasi situs resmi Node.js.
+
+Penyusunan Format Laporan:
+Menyusun ringkasan tanggapan yang rapi dan terstruktur sesuai dengan indikator tabel lembar kerja.

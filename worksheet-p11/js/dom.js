@@ -1,4 +1,3 @@
-// js/dom.js
 import { saring } from './data.js';
 
 const wadah = document.querySelector(".galeri.grid");
@@ -25,7 +24,7 @@ function buatKartu(proyek, favorit = []) {
   figure.className = "kartu";
 
   const img = document.createElement("img");
-  img.src = proyek.gambar || "image.png"; // Gambar default dari kode awal kamu
+  img.src = proyek.gambar || "image.png"; 
   img.alt = `Gambar film ${proyek.judul}`;
   img.width = 640;
   img.height = 360;
@@ -47,7 +46,6 @@ function buatKartu(proyek, favorit = []) {
   const p = document.createElement("p");
   p.textContent = proyek.sinopsis || "Tidak ada sinopsis ketersediaan saat ini.";
 
-  // Tombol favorit kecil (sesuai Lembar C)
   const tombolFav = document.createElement("button");
   tombolFav.type = "button";
   tombolFav.className = "favorit";
@@ -69,7 +67,6 @@ function tandaiTombolAktif(kategoriAktif) {
   });
 }
 
-// render(state) — Menerima objek state
 export function render(state) {
   if (!wadah) return;
   wadah.textContent = ""; // Kosongkan wadah
