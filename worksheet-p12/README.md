@@ -9,3 +9,9 @@ Berbasis Web, satu folder untuk setiap pertemuan.
  port : http://localhost:5173/
  
 ## Catatan penggunaan AI
+Migrasi & Struktur Komponen: Membantu memecah halaman HTML monolitik P11 (profil.html) menjadi 4 komponen Vue 3 SFC (KepalaProfil.vue, TombolFilter.vue, DaftarProyek.vue, dan FormKontak.vue).   
+Reaktivitas & State Management: Menghubungkan state bersama menggunakan reactive() pada state.js, menggantikan fungsi render(state) manual dengan reaktivitas bawaan Vue, serta mengonfigurasi localStorage dan watch.   
+Perbaikan Tata Letak (Layout): Mengembalikan struktur layout 2 kolom (.sisi dan .utama) agar tabel biodata film, kartu film, dan form review kembali presisi seperti pada P11.   
+Validasi & Event Handling: Memperbaiki fungsi tombol Atur Ulang serta validasi spasi dan pesan galat pada formulir review film.   
+Penyelesaian Masalah Asset: Memperbaiki jalur pemanggilan gambar yang pecah (broken image) dengan memindahkan file pendukung ke folder public/.   
+Dokumentasi & Refleksi: Membantu pengisian tabel evaluasi Lembar D, E, dan F (DevTools, build, git)
