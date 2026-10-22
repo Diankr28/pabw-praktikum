@@ -1,4 +1,5 @@
 export const profil = {
+  nama: "List Film Favorit",
   name: "Dian Krisna Rusmayanti",
   role: "Student of Informatics, Learn Front - End",
   ability: ["Menulis puisi", "Berbahasa mandarin", "css", "java", "html"],

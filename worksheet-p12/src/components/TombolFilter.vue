@@ -8,6 +8,7 @@ import { state, pilihKategori, aturUlang } from '../state.js'
       type="button" 
       class="tombol-filter" 
       :class="{ aktif: state.kategoriAktif === 'semua' }"
+      data-filter="semua"
       @click="pilihKategori('semua')"
     >
       Semua
@@ -16,6 +17,7 @@ import { state, pilihKategori, aturUlang } from '../state.js'
       type="button" 
       class="tombol-filter" 
       :class="{ aktif: state.kategoriAktif === '2026' }"
+      data-filter="2026"
       @click="pilihKategori('2026')"
     >
       2026
@@ -24,6 +26,7 @@ import { state, pilihKategori, aturUlang } from '../state.js'
       type="button" 
       class="tombol-filter" 
       :class="{ aktif: state.kategoriAktif === '2025' }"
+      data-filter="2025"
       @click="pilihKategori('2025')"
     >
       2025
@@ -32,6 +35,7 @@ import { state, pilihKategori, aturUlang } from '../state.js'
       type="button" 
       class="tombol-filter" 
       :class="{ aktif: state.kategoriAktif === '2024' }"
+      data-filter="2024"
       @click="pilihKategori('2024')"
     >
       2024
@@ -40,6 +44,7 @@ import { state, pilihKategori, aturUlang } from '../state.js'
       type="button" 
       class="tombol-filter" 
       :class="{ aktif: state.kategoriAktif === '2023' }"
+      data-filter="2023"
       @click="pilihKategori('2023')"
     >
       2023

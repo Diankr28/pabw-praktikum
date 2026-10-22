@@ -1,6 +1,9 @@
 <script setup>
-const props = defineProps({
-  profil: { type: Object, required: true },
+defineProps({
+  profil: {
+    type: Object,
+    required: true
+  }
 })
 </script>
 
@@ -10,7 +13,7 @@ const props = defineProps({
     <label for="tema" class="tombol-tema">Tema gelap</label>
 
     <div class="header-baris">
-      <h1>List Film Favorit</h1>
+      <h1>{{ profil.nama }}</h1>
       <nav class="navbar" aria-label="Navigasi utama">
         <ul>
           <li><a href="#bagian-3">Beranda</a></li>
