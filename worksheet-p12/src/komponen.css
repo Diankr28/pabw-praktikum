@@ -1,0 +1,164 @@
+.form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);          /* jarak label ke isian, seragam */
+}
+ 
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+ 
+input, select, textarea {
+  font: inherit;                /* kolom isian ikut ukuran huruf halaman */
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--fg);
+}
+ 
+button {
+  font: inherit;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: var(--primary-fg);
+  cursor: pointer;
+}
+/* :focus-visible hanya muncul saat pengguna memakai papan ketik */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+ 
+/* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
+input:user-invalid {
+  border-color: var(--danger);
+  border-width: 2px;
+}
+ 
+/* Pesan galat: sembunyikan selama belum tidak-sah, tampilkan saat perlu */
+.pesan-galat       { display: none; color: var(--danger); font-size: var(--text-sm); }
+.form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+.kartu__isi { min-width: 0; }
+.kartu__judul { overflow-wrap: anywhere; }
+
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.sorotan { grid-column: span 2; }
+.papan    { grid-row: span 2; }
+
+/* Container pembungkus filter */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+/* Tombol filter bawaan (menggunakan --surface dan --border dari Lapis 2) */
+.tombol-filter {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+
+}
+
+/* Efek saat kursor diarahkan ke tombol filter */
+.tombol-filter:hover {
+  background: var(--border);
+  color: var(--primary-fg);
+}
+
+/* Tombol filter aktif (menggunakan --primary dan --primary-fg) */
+.tombol-filter.aktif {
+  background: var(--primary);
+  color: var(--primary-fg);
+  border-color: var(--focus);
+  font-weight: 600;
+}
+
+/* Pesan saat galeri/kategori kosong */
+.pesan-kosong {
+  grid-column: 1 / -1; /* Memenuhi lebar baris grid galeri */
+  padding: var(--card-pad);
+  text-align: center;
+  color: var(--fg);
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-1);
+}
+
+/* Styling Tabel Biodata Film */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: var(--space-2);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface);
+  color: var(--fg);
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+  padding: var(--space-2);
+  color: var(--fg);
+  caption-side: top;
+  text-align: left;
+}
+
+thead th {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: var(--space-2) var(--space-3);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody th,
+tbody td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+/* Efek warna selang-seling (Zebra striping) */
+tbody tr:nth-child(even) {
+  background-color: var(--surface-alt);
+}
+
+/* Efek Hover baris */
+tbody tr:hover {
+  background-color: var(--surface-hover);
+}
